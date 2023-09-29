@@ -65,3 +65,16 @@
         max-width: 50px;
     }
 }
+
+@media (max-width: 425px) {
+
+    .conteudo {
+        top: -14%;
+    }
+
+    .botoes {
+        padding: 20px;
+        top: -4%;
+    }
+
+}

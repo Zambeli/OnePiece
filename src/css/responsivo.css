@@ -69,12 +69,12 @@
 @media (max-width: 425px) {
 
     .conteudo {
-        top: -14%;
+        top: -18%;
     }
 
     .botoes {
         padding: 20px;
-        top: -4%;
+        top: -8%;
     }
 
 }

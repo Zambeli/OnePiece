@@ -23,21 +23,25 @@ botoes.forEach((botao, indice) => {
 
     botao.addEventListener('click', () => {
 
-        const selecionado = document.querySelector('.botao.selecionado');
+        desselecionarBotao();
+        desselecionarPersonagem();
 
-        selecionado.classList.remove('selecionado')
 
         botao.classList.add('selecionado')
-
-
-        const personagemSelecionado = document.querySelector('.personagem.selecionado')
-
-        personagemSelecionado.classList.remove('selecionado')
-
         personagens[indice].classList.add('selecionado')
 
     })
 
 })
 
+
+function desselecionarPersonagem() {
+    const personagemSelecionado = document.querySelector('.personagem.selecionado');
+    personagemSelecionado.classList.remove('selecionado');
+}
+
+function desselecionarBotao() {
+    const selecionado = document.querySelector('.botao.selecionado');
+    selecionado.classList.remove('selecionado');
+}
 
